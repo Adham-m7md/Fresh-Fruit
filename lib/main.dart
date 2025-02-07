@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fresh_fruit/features/splash/presintation/views/splash_view.dart';
-import 'package:fresh_fruit/helper/on_generate_route.dart';
+import 'package:fresh_fruit/core/helper/on_generate_route.dart';
 
 void main() {
   runApp(const FreshFruit());

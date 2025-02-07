@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:fresh_fruit/features/splash/presintation/widgets/Splash_view_body.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({super.key});
-  static const id = 'SplashView';
+  static const String id = 'SplashView';
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(
+      body: SplashViewBody(),
+    );
   }
 }
