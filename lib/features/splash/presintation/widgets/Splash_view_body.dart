@@ -13,9 +13,8 @@ class SplashViewBody extends StatefulWidget {
 class _SplashViewBodyState extends State<SplashViewBody> {
   @override
   void initState() {
-   Future.delayed( const Duration(seconds: 3), ()
-    => Navigator.pushReplacementNamed(context,OnBoardingView.id));
     super.initState();
+    excuteNavigation();
   }
 
   @override
@@ -34,6 +33,13 @@ class _SplashViewBodyState extends State<SplashViewBody> {
           fit: BoxFit.fill,
         )
       ],
+    );
+  }
+
+  void excuteNavigation() {
+    Future.delayed(
+      const Duration(seconds: 3),
+      () => Navigator.pushReplacementNamed(context, OnBoardingView.id),
     );
   }
 }
