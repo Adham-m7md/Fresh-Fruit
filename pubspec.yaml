@@ -32,6 +32,8 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.17
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_launcher_icons: ^0.14.3
@@ -90,4 +92,6 @@ flutter_assets:
   assets_path: assets/images/
   output_path: lib/core/utils
   filename: svg_images.dart
-  field_prefix:
+  field_prefix: null
+flutter_intl:
+  enabled: true

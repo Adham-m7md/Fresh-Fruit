@@ -35,7 +35,13 @@ class PageViewItem extends StatelessWidget {
                   left: 0,
                   child: Image.asset(image),
                 ),
-                const Text('تخط')
+                const Padding(
+                  padding: EdgeInsets.only(right: 36, top: 16),
+                  child: Text(
+                    'تخط',
+                    style: TextStyle(color: Color(0xff949D9E)),
+                  ),
+                )
               ],
             ),
           )

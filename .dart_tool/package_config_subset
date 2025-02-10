@@ -74,6 +74,10 @@ image
 3.0
 file:///C:/Users/Adham/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.5.2/
 file:///C:/Users/Adham/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.5.2/lib/
+intl
+3.0
+file:///C:/Users/Adham/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.19.0/
+file:///C:/Users/Adham/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.19.0/lib/
 json_annotation
 3.0
 file:///C:/Users/Adham/AppData/Local/Pub/Cache/hosted/pub.dev/json_annotation-4.9.0/
@@ -190,6 +194,10 @@ flutter
 3.3
 file:///C:/src/flutter/packages/flutter/
 file:///C:/src/flutter/packages/flutter/lib/
+flutter_localizations
+3.2
+file:///C:/src/flutter/packages/flutter_localizations/
+file:///C:/src/flutter/packages/flutter_localizations/lib/
 flutter_test
 3.3
 file:///C:/src/flutter/packages/flutter_test/
