@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:fresh_fruit/core/utils/svg_images.dart';
+import 'package:fresh_fruit/core/utils/app_directions.dart';
 
 class PageViewItem extends StatelessWidget {
   const PageViewItem(
@@ -30,7 +30,7 @@ class PageViewItem extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  bottom: -80,
+                  bottom: -65,
                   right: 0,
                   left: 0,
                   child: Image.asset(image),
@@ -44,7 +44,15 @@ class PageViewItem extends StatelessWidget {
                 )
               ],
             ),
-          )
+          ),
+          SizedBox(
+            height: context.screenHeight * 0.08,
+          ),
+          titel,
+          SizedBox(
+            height: context.screenHeight * 0.03,
+          ),
+          Text(description, textAlign: TextAlign.center)
         ],
       ),
     );
