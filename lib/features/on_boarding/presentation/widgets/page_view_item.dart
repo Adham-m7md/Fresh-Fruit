@@ -52,7 +52,17 @@ class PageViewItem extends StatelessWidget {
           SizedBox(
             height: context.screenHeight * 0.03,
           ),
-          Text(description, textAlign: TextAlign.center)
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: Text(
+              description,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: 'Cairo'),
+            ),
+          ),
         ],
       ),
     );

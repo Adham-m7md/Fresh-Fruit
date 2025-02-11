@@ -14,24 +14,51 @@ class OnboardingPageView extends StatelessWidget {
           image: 'assets/images/onboarding1.png',
           backGroundImage: Assets.imagesBackgroundOnboarding1,
           description:
-              'اكتشف تجربة تسوق فريدة مع FruitHUB. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.',
+              'اكتشف تجربة تسوق فريدة مع FreshFruit. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.',
           titel: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('مرحبًا بك في'),
-              Text('Fresh'),
+              Text(
+                'مرحبًا بك في',
+                style: TextStyle(
+                    fontSize: 23,
+                    fontWeight: FontWeight.w700,
+                    fontFamily: 'Cairo'),
+              ),
+              SizedBox(
+                width: 12,
+              ),
               Text(
                 'Fruit',
-              )
+                style: TextStyle(
+                    color: Color(0xffCB4835),
+                    fontSize: 23,
+                    fontWeight: FontWeight.w700,
+                    fontFamily: 'Cairo'),
+              ),
+              Text(
+                'Fresh',
+                style: TextStyle(
+                    color: Color(0xffFEC440),
+                    fontSize: 23,
+                    fontWeight: FontWeight.w700,
+                    fontFamily: 'Cairo'),
+              ),
             ],
           ),
         ),
-        PageViewItem(
+        const PageViewItem(
             image: 'assets/images/onboarding2.png',
             backGroundImage: Assets.imagesBackgroundOnboarding2,
             description:
-                'اكتشف تجربة تسوق فريدة مع FruitHUB. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.',
-            titel: Text('ابحث وتسوق'))
+                'نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية',
+            titel: Text(
+              'ابحث وتسوق',
+              style: TextStyle(
+                  fontSize: 23,
+                  fontWeight: FontWeight.w700,
+                  fontFamily: 'Cairo'),
+            ))
       ],
     );
   }
