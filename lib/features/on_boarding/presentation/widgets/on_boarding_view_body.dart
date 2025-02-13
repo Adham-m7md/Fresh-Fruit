@@ -6,14 +6,42 @@ import 'package:fresh_fruit/core/utils/app_colors.dart';
 import 'package:fresh_fruit/core/utils/app_directions.dart';
 import 'package:fresh_fruit/features/on_boarding/presentation/widgets/onboarding_page_view.dart';
 
-class OnBoardingViewBody extends StatelessWidget {
+class OnBoardingViewBody extends StatefulWidget {
   const OnBoardingViewBody({super.key});
+
+  @override
+  State<OnBoardingViewBody> createState() => _OnBoardingViewBodyState();
+}
+
+class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
+  late PageController pageController;
+  var currentPage = 0;
+  @override
+  void initState() {
+    super.initState();
+    pageController = PageController(); // Initialize the controller
+    pageController.addListener(() {
+      setState(() {
+        currentPage = pageController.page!.round();
+      }); //listenning to pageController && update the currentPage
+    });
+  }
+
+  @override
+  void dispose() {
+    pageController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Expanded(child: OnboardingPageView()),
+        Expanded(
+          child: OnboardingPageView(
+            pageController: pageController,
+          ),
+        ),
         DotsIndicator(
           dotsCount: 2,
           decorator: DotsDecorator(
