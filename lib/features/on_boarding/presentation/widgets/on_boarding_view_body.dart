@@ -44,6 +44,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
         ),
         DotsIndicator(
           dotsCount: 2,
+          position: currentPage,
           decorator: DotsDecorator(
             activeColor: AppColors.kprimaryColor,
             color: AppColors.kprimaryColor.withOpacity(0.5),
@@ -52,9 +53,15 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
         SizedBox(
           height: context.screenHeight * 0.03,
         ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: kHorizontalPadding),
-          child: CustomButton(onPressed: () {}, text: 'ابدأ الان'),
+        Visibility(
+          maintainAnimation: true,
+          maintainSize: true,
+          maintainState: true,
+          visible: currentPage == 1,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: kHorizontalPadding),
+            child: CustomButton(onPressed: () {}, text: 'ابدأ الان'),
+          ),
         ),
         SizedBox(
           height: context.screenHeight * 0.05,

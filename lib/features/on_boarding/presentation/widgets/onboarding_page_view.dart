@@ -15,14 +15,14 @@ class OnboardingPageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return PageView(
       controller: pageController,
-      children: [
-        PageViewItem(
+      children: const [
+         PageViewItem(
           isVisible: true,
           image: 'assets/images/onboarding1.png',
           backGroundImage: Assets.imagesBackgroundOnboarding1,
           description:
               'اكتشف تجربة تسوق فريدة مع FreshFruit. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.',
-          titel: const Row(
+          titel: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
@@ -60,7 +60,7 @@ class OnboardingPageView extends StatelessWidget {
           backGroundImage: Assets.imagesBackgroundOnboarding2,
           description:
               'نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية',
-          titel: const Text(
+          titel: Text(
             'ابحث وتسوق',
             style: TextStyle(
                 fontSize: 23, fontWeight: FontWeight.w700, fontFamily: 'Cairo'),

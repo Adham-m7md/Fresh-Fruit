@@ -43,7 +43,11 @@ class PageViewItem extends StatelessWidget {
                     padding: EdgeInsets.only(right: 36, top: 16),
                     child: Text(
                       'تخط',
-                      style: TextStyle(color: Color(0xff949D9E)),
+                      style: TextStyle(
+                          color: Color(
+                            0xff949D9E,
+                          ),
+                          fontFamily: 'Cairo'),
                     ),
                   ),
                 )
