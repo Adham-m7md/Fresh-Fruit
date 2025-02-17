@@ -23,7 +23,9 @@ class CustomButton extends StatelessWidget {
         child: Text(
           text,
           style: const TextStyle(
-              color: AppColors.kWiteColor, fontSize: 16, fontFamily: 'Cairo'),
+            color: AppColors.kWiteColor,
+            fontSize: 16,
+          ),
         ),
       ),
     );

@@ -44,10 +44,10 @@ class PageViewItem extends StatelessWidget {
                     child: Text(
                       'تخط',
                       style: TextStyle(
-                          color: Color(
-                            0xff949D9E,
-                          ),
-                          fontFamily: 'Cairo'),
+                        color: Color(
+                          0xff949D9E,
+                        ),
+                      ),
                     ),
                   ),
                 )
@@ -67,9 +67,9 @@ class PageViewItem extends StatelessWidget {
               description,
               textAlign: TextAlign.center,
               style: const TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w500,
-                  fontFamily: 'Cairo'),
+                fontSize: 17,
+                fontWeight: FontWeight.w500,
+              ),
             ),
           ),
         ],

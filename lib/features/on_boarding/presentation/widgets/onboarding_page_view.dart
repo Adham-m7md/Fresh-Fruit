@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:fresh_fruit/core/utils/svg_images.dart';
+import 'package:fresh_fruit/core/utils/app_svg_images.dart';
 import 'package:fresh_fruit/features/on_boarding/presentation/widgets/page_view_item.dart';
 
 class OnboardingPageView extends StatelessWidget {
   const OnboardingPageView({
     super.key,
     required this.pageController,
-
   });
   final PageController pageController;
-
 
   @override
   Widget build(BuildContext context) {
     return PageView(
       controller: pageController,
       children: const [
-         PageViewItem(
+        PageViewItem(
           isVisible: true,
           image: 'assets/images/onboarding1.png',
           backGroundImage: Assets.imagesBackgroundOnboarding1,
@@ -28,9 +26,9 @@ class OnboardingPageView extends StatelessWidget {
               Text(
                 'مرحبًا بك في',
                 style: TextStyle(
-                    fontSize: 23,
-                    fontWeight: FontWeight.w700,
-                    fontFamily: 'Cairo'),
+                  fontSize: 23,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
               SizedBox(
                 width: 12,
@@ -38,18 +36,18 @@ class OnboardingPageView extends StatelessWidget {
               Text(
                 'Fruit',
                 style: TextStyle(
-                    color: Color(0xffCB4835),
-                    fontSize: 23,
-                    fontWeight: FontWeight.w700,
-                    fontFamily: 'Cairo'),
+                  color: Color(0xffCB4835),
+                  fontSize: 23,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
               Text(
                 'Fresh',
                 style: TextStyle(
-                    color: Color(0xffFEC440),
-                    fontSize: 23,
-                    fontWeight: FontWeight.w700,
-                    fontFamily: 'Cairo'),
+                  color: Color(0xffFEC440),
+                  fontSize: 23,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
             ],
           ),
@@ -63,7 +61,9 @@ class OnboardingPageView extends StatelessWidget {
           titel: Text(
             'ابحث وتسوق',
             style: TextStyle(
-                fontSize: 23, fontWeight: FontWeight.w700, fontFamily: 'Cairo'),
+              fontSize: 23,
+              fontWeight: FontWeight.w700,
+            ),
           ),
         )
       ],
