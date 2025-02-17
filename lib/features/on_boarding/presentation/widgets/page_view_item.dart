@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fresh_fruit/core/utils/app_directions.dart';
+import 'package:fresh_fruit/core/utils/app_text_styles.dart';
 
 class PageViewItem extends StatelessWidget {
   const PageViewItem(
@@ -39,16 +40,11 @@ class PageViewItem extends StatelessWidget {
                 ),
                 Visibility(
                   visible: isVisible,
-                  child: const Padding(
-                    padding: EdgeInsets.only(right: 36, top: 16),
-                    child: Text(
-                      'تخط',
-                      style: TextStyle(
-                        color: Color(
-                          0xff949D9E,
-                        ),
-                      ),
-                    ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(right: 36, top: 16),
+                    child: Text('تخط',
+                        style: TextStyles.regular16
+                            .copyWith(color: const Color(0xff949D9E))),
                   ),
                 )
               ],
@@ -63,14 +59,8 @@ class PageViewItem extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24),
-            child: Text(
-              description,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 17,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
+            child: Text(description,
+                textAlign: TextAlign.center, style: TextStyles.semiBold16),
           ),
         ],
       ),

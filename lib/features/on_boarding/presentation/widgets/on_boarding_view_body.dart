@@ -47,7 +47,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
           position: currentPage,
           decorator: DotsDecorator(
             activeColor: AppColors.kprimaryColor,
-            color: AppColors.kprimaryColor.withOpacity(0.5),
+            color: AppColors.kprimaryColor.withValues(alpha: 0.5),
           ),
         ),
         SizedBox(

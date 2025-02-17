@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fresh_fruit/core/utils/app_colors.dart';
 import 'package:fresh_fruit/core/utils/app_svg_images.dart';
+import 'package:fresh_fruit/core/utils/app_text_styles.dart';
 import 'package:fresh_fruit/features/on_boarding/presentation/widgets/page_view_item.dart';
 
 class OnboardingPageView extends StatelessWidget {
@@ -13,7 +15,7 @@ class OnboardingPageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return PageView(
       controller: pageController,
-      children: const [
+      children: [
         PageViewItem(
           isVisible: true,
           image: 'assets/images/onboarding1.png',
@@ -23,48 +25,26 @@ class OnboardingPageView extends StatelessWidget {
           titel: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                'مرحبًا بك في',
-                style: TextStyle(
-                  fontSize: 23,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              SizedBox(
+              const Text('مرحبًا بك في', style: TextStyles.bold23),
+              const SizedBox(
                 width: 12,
               ),
-              Text(
-                'Fruit',
-                style: TextStyle(
-                  color: Color(0xffCB4835),
-                  fontSize: 23,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              Text(
-                'Fresh',
-                style: TextStyle(
-                  color: Color(0xffFEC440),
-                  fontSize: 23,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
+              Text('Fruit',
+                  style:
+                      TextStyles.bold23.copyWith(color: AppColors.kRedColor)),
+              Text('Fresh',
+                  style:
+                      TextStyles.bold23.copyWith(color: AppColors.kYellowColor))
             ],
           ),
         ),
-        PageViewItem(
+        const PageViewItem(
           isVisible: false,
           image: 'assets/images/onboarding2.png',
           backGroundImage: Assets.imagesBackgroundOnboarding2,
           description:
               'نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية',
-          titel: Text(
-            'ابحث وتسوق',
-            style: TextStyle(
-              fontSize: 23,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
+          titel: Text('ابحث وتسوق', style: TextStyles.bold23),
         )
       ],
     );
