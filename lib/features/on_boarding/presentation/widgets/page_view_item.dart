@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fresh_fruit/core/constants.dart';
+import 'package:fresh_fruit/core/services/shared_preferences_singeltone.dart';
 import 'package:fresh_fruit/core/utils/app_directions.dart';
 import 'package:fresh_fruit/core/utils/app_text_styles.dart';
+import 'package:fresh_fruit/features/Auth/presintation/view/login/login_view.dart';
 
 class PageViewItem extends StatelessWidget {
   const PageViewItem(
@@ -42,9 +45,16 @@ class PageViewItem extends StatelessWidget {
                   visible: isVisible,
                   child: Padding(
                     padding: const EdgeInsets.only(right: 36, top: 16),
-                    child: Text('تخط',
-                        style: TextStyles.regular16
-                            .copyWith(color: const Color(0xff949D9E))),
+                    child: GestureDetector(
+                      onTap: () {
+                        Prefs.setBool(kIsOnBooardingViewSeen, true);
+                        Navigator.of(context)
+                            .pushReplacementNamed(LogInView.id);
+                      },
+                      child: Text('تخط',
+                          style: TextStyles.regular16
+                              .copyWith(color: const Color(0xff949D9E))),
+                    ),
                   ),
                 )
               ],
