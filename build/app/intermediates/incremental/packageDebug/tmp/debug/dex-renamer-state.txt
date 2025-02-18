@@ -1,4 +1,4 @@
-#Mon Feb 17 20:45:38 EET 2025
+#Tue Feb 18 17:42:18 EET 2025
 base.0=F\:\\fresh_fruit\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=F\:\\fresh_fruit\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=F\:\\fresh_fruit\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
