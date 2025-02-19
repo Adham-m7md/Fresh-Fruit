@@ -5,6 +5,8 @@ class CustomTextFormFeild extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return TextFormField(
+      decoration: InputDecoration(border: InputBorder()),
+    );
   }
 }

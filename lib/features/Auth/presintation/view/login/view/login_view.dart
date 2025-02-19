@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fresh_fruit/core/utils/app_text_styles.dart';
+import 'package:fresh_fruit/core/helper/widgets/custom_app_bar.dart';
+import 'package:fresh_fruit/core/utils/app_colors.dart';
+
 import 'package:fresh_fruit/features/Auth/presintation/view/login/widgets/login_view_body.dart';
 
 class LogInView extends StatelessWidget {
@@ -9,15 +11,8 @@ class LogInView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text(
-          'تسجيل دخول',
-          style: TextStyles.bold19,
-        ),
-        leading: IconButton(
-            onPressed: () {}, icon: const Icon(Icons.arrow_back_ios_new)),
-      ),
+      backgroundColor: AppColors.kWiteColor,
+      appBar: buildAppBar(context, titel: 'تسجيل دخول'),
       body: const LoginViewBody(),
     );
   }

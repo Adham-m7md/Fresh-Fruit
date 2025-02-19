@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:fresh_fruit/core/helper/on_generate_route.dart';
 import 'package:fresh_fruit/core/services/shared_preferences_singeltone.dart';
+import 'package:fresh_fruit/core/utils/app_colors.dart';
 import 'package:fresh_fruit/features/splash/presintation/views/splash_view.dart';
 import 'package:fresh_fruit/generated/l10n.dart';
 
@@ -17,7 +18,11 @@ class FreshFruit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'Cairo'),
+      theme: ThemeData(
+          fontFamily: 'Cairo',
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: AppColors.kprimaryColor,
+          )),
       localizationsDelegates: const [
         S.delegate,
         GlobalMaterialLocalizations.delegate,
