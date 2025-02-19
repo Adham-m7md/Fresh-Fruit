@@ -5,8 +5,10 @@ import 'package:fresh_fruit/core/helper/widgets/custom_button.dart';
 import 'package:fresh_fruit/core/services/shared_preferences_singeltone.dart';
 import 'package:fresh_fruit/core/utils/app_colors.dart';
 import 'package:fresh_fruit/core/utils/app_directions.dart';
-import 'package:fresh_fruit/features/Auth/presintation/view/login/login_view.dart';
+
 import 'package:fresh_fruit/features/on_boarding/presentation/widgets/onboarding_page_view.dart';
+
+import '../../../Auth/presintation/view/login/view/login_view.dart';
 
 class OnBoardingViewBody extends StatefulWidget {
   const OnBoardingViewBody({super.key});

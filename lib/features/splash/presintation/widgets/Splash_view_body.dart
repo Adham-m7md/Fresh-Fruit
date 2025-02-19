@@ -3,7 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fresh_fruit/core/constants.dart';
 import 'package:fresh_fruit/core/services/shared_preferences_singeltone.dart';
 import 'package:fresh_fruit/core/utils/app_svg_images.dart';
-import 'package:fresh_fruit/features/Auth/presintation/view/login/login_view.dart';
+import 'package:fresh_fruit/features/Auth/presintation/view/login/view/login_view.dart';
+
 import 'package:fresh_fruit/features/on_boarding/presentation/view/on_boarding_view.dart';
 
 class SplashViewBody extends StatefulWidget {

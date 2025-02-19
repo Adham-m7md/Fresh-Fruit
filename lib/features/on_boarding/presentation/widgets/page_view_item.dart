@@ -4,7 +4,7 @@ import 'package:fresh_fruit/core/constants.dart';
 import 'package:fresh_fruit/core/services/shared_preferences_singeltone.dart';
 import 'package:fresh_fruit/core/utils/app_directions.dart';
 import 'package:fresh_fruit/core/utils/app_text_styles.dart';
-import 'package:fresh_fruit/features/Auth/presintation/view/login/login_view.dart';
+import 'package:fresh_fruit/features/Auth/presintation/view/login/view/login_view.dart';
 
 class PageViewItem extends StatelessWidget {
   const PageViewItem(
