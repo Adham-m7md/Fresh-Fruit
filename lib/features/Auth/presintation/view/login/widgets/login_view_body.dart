@@ -7,6 +7,8 @@ import 'package:fresh_fruit/core/helper/widgets/or_divider.dart';
 import 'package:fresh_fruit/core/utils/app_colors.dart';
 import 'package:fresh_fruit/core/utils/app_directions.dart';
 import 'package:fresh_fruit/core/utils/app_text_styles.dart';
+import 'package:fresh_fruit/core/utils/svg_images.dart';
+import 'package:fresh_fruit/features/Auth/presintation/Widgets/custom_social_login_button.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -59,6 +61,30 @@ class LoginViewBody extends StatelessWidget {
               height: context.screenHeight * 0.03,
             ),
             const OrDivider(),
+            SizedBox(
+              height: context.screenHeight * 0.03,
+            ),
+            CustomSocialLoginButton(
+              titel: 'تسجيل بواسطة جوجل',
+              assetName: Assets.imagesGoogleIcon,
+              onTap: () {},
+            ),
+            SizedBox(
+              height: context.screenHeight * 0.02,
+            ),
+            CustomSocialLoginButton(
+              titel: 'تسجيل بواسطة أبل',
+              assetName: Assets.imagesAppleIcon,
+              onTap: () {},
+            ),
+            SizedBox(
+              height: context.screenHeight * 0.02,
+            ),
+            CustomSocialLoginButton(
+              titel: 'تسجيل بواسطة فيسبوك',
+              assetName: Assets.imagesFacebookIcon,
+              onTap: () {},
+            ),
           ],
         ),
       ),
