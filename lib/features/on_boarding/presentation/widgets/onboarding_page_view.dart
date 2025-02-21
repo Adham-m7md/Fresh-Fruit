@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fresh_fruit/core/utils/app_colors.dart';
-import 'package:fresh_fruit/core/utils/app_svg_images.dart';
 import 'package:fresh_fruit/core/utils/app_text_styles.dart';
+import 'package:fresh_fruit/core/utils/svg_images.dart';
 import 'package:fresh_fruit/features/on_boarding/presentation/widgets/page_view_item.dart';
 
 class OnboardingPageView extends StatelessWidget {

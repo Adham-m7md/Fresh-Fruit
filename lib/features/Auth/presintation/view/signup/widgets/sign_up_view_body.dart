@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fresh_fruit/core/constants.dart';
+import 'package:fresh_fruit/core/helper/widgets/custom_button.dart';
+import 'package:fresh_fruit/core/helper/widgets/custom_terms_and_conditions.dart';
 import 'package:fresh_fruit/core/helper/widgets/custom_text_form_feild.dart';
+import 'package:fresh_fruit/core/helper/widgets/have_an_account.dart';
 import 'package:fresh_fruit/core/utils/app_colors.dart';
 import 'package:fresh_fruit/core/utils/app_directions.dart';
 
@@ -17,17 +20,17 @@ class SignUpViewBody extends StatelessWidget {
             SizedBox(height: context.screenHeight * 0.03),
             const CustomTextFormFeild(
               hintText: 'الاسم كامل',
-              keyBoardType: TextInputType.text,
+              keyBoardType: TextInputType.name,
             ),
             SizedBox(height: context.screenHeight * 0.02),
             const CustomTextFormFeild(
               hintText: 'البريد الإلكتروني',
-              keyBoardType: TextInputType.text,
+              keyBoardType: TextInputType.emailAddress,
             ),
             SizedBox(height: context.screenHeight * 0.02),
             CustomTextFormFeild(
               hintText: 'كلمة المرور',
-              keyBoardType: TextInputType.text,
+              keyBoardType: TextInputType.visiblePassword,
               suffixIcon: IconButton(
                   onPressed: () {},
                   icon: const Icon(
@@ -36,6 +39,11 @@ class SignUpViewBody extends StatelessWidget {
                   )),
             ),
             SizedBox(height: context.screenHeight * 0.03),
+            const CustomTermsAndConditions(),
+            SizedBox(height: context.screenHeight * 0.03),
+            CustomButton(onPressed: () {}, text: 'إنشاء حساب جديد'),
+            SizedBox(height: context.screenHeight * 0.03),
+            const HaveAnAccount(),
           ],
         ),
       ),
