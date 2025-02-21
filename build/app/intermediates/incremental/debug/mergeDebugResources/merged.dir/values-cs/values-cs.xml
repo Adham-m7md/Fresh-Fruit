@@ -34,6 +34,7 @@
     <string msgid="6107532579223922871" name="call_notification_incoming_text">"Příchozí hovor"</string>
     <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Probíhající hovor"</string>
     <string msgid="59049573811482460" name="call_notification_screening_text">"Prověřování příchozího hovoru"</string>
+    <string name="common_google_play_services_unknown_issue">Aplikace %1$s má potíže se službami Google Play. Zkuste to prosím znovu.</string>
     <string msgid="6083905920877235314" name="copy">"Kopírovat"</string>
     <string msgid="2427401033573778270" name="expand_button_title">"Rozšířená nastavení"</string>
     <string msgid="6573031135582639649" name="not_set">"Nenastaveno"</string>

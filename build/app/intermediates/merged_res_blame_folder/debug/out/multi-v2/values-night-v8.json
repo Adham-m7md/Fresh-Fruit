@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fresh_fruit.app-mergeDebugResources-39:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.fresh_fruit.app-mergeDebugResources-42:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "F:\\fresh_fruit\\android\\app\\src\\main\\res\\values-night\\styles.xml",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Adham\\.gradle\\caches\\8.10.2\\transforms\\e2b4833577f8ecf1abc985e25eea6ecb\\transformed\\appcompat-1.1.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Adham\\.gradle\\caches\\8.10.2\\transforms\\e149c1a8a051fff4eb2d0ea74b8fb889\\transformed\\appcompat-1.1.0\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

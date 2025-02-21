@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fresh_fruit.app-mergeDebugResources-39:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "com.example.fresh_fruit.app-mergeDebugResources-42:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Adham\\.gradle\\caches\\8.10.2\\transforms\\638a2958501549fc916829b02611f33f\\transformed\\preference-1.2.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "source": "C:\\Users\\Adham\\.gradle\\caches\\8.10.2\\transforms\\74880ab7fe36e3e3756e354a77ce1fd6\\transformed\\preference-1.2.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
