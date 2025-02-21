@@ -68,6 +68,12 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "dartz",
+      "rootUri": "file:///C:/Users/Adham/AppData/Local/Pub/Cache/hosted/pub.dev/dartz-0.10.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "dots_indicator",
       "rootUri": "file:///C:/Users/Adham/AppData/Local/Pub/Cache/hosted/pub.dev/dots_indicator-3.0.0",
       "packageUri": "lib/",
@@ -428,7 +434,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-02-21T17:37:13.850660Z",
+  "generated": "2025-02-21T22:37:28.724448Z",
   "generator": "pub",
   "generatorVersion": "3.6.2",
   "flutterRoot": "file:///C:/src/flutter",
