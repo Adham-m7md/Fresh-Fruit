@@ -25,10 +25,11 @@ class FreshFruit extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          fontFamily: 'Cairo',
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: AppColors.kprimaryColor,
-          )),
+        fontFamily: 'Cairo',
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: AppColors.kprimaryColor,
+        ),
+      ),
       localizationsDelegates: const [
         S.delegate,
         GlobalMaterialLocalizations.delegate,
