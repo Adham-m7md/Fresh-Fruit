@@ -13,14 +13,14 @@ class FirebaseAuthService {
       return credential.user!;
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
-        throw CustomeExeption(message: 'الرقم السري ضعيف ');
+        throw CustomException(message: 'الرقم السري ضعيف ');
       } else if (e.code == 'email-already-in-use') {
-        throw CustomeExeption(message: 'البريد الالكتروني موجود بالفعل');
+        throw CustomException(message: 'البريد الالكتروني موجود بالفعل');
       } else {
-        throw CustomeExeption(message: 'حدث خطأ ما الرجاء المحاولة مرة أخرى');
+        throw CustomException(message: 'حدث خطأ ما الرجاء المحاولة مرة أخرى');
       }
     } catch (e) {
-      throw CustomeExeption(message: 'حدث خطأ ما الرجاء المحاولة مرة أخرى');
+      throw CustomException(message: 'حدث خطأ ما الرجاء المحاولة مرة أخرى');
     }
   }
 }
