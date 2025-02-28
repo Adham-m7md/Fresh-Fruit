@@ -1,0 +1,2 @@
+F:/fresh_fruit/android/app/.cxx/Debug/6j226228/x86_64/CMakeFiles/edit_cache.dir
+F:/fresh_fruit/android/app/.cxx/Debug/6j226228/x86_64/CMakeFiles/rebuild_cache.dir

@@ -2,7 +2,6 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:fresh_fruit/core/utils/app_colors.dart';
 import 'package:fresh_fruit/core/utils/app_text_styles.dart';
-import 'package:fresh_fruit/features/Auth/presintation/view/login/view/login_view.dart';
 
 class HaveAnAccount extends StatelessWidget {
   const HaveAnAccount({super.key});
@@ -19,7 +18,7 @@ class HaveAnAccount extends StatelessWidget {
           TextSpan(
             recognizer: TapGestureRecognizer()
               ..onTap = () {
-                Navigator.pushNamed(context, LogInView.id);
+                Navigator.pop(context);
               },
             text: ' تسجيل دخول',
             style:

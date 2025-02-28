@@ -1,7 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:meta/meta.dart';
 
 import 'package:fresh_fruit/features/Auth/domain/entities/user_entity.dart';
 import 'package:fresh_fruit/features/Auth/domain/repos/auth_repo.dart';
