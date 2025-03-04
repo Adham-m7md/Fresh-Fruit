@@ -32,6 +32,8 @@ class SignUpView extends StatelessWidget {
                     content: Text(state.message),
                   ),
                 );
+              } else {
+                return;
               }
             },
             builder: (context, state) {
