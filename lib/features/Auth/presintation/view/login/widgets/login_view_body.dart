@@ -24,18 +24,30 @@ class LoginViewBody extends StatelessWidget {
             SizedBox(
               height: context.screenHeight * 0.03,
             ),
-            const CustomTextFormFeild(
+            CustomTextFormFeild(
               hintText: 'البريد الألكتروني',
               keyBoardType: TextInputType.emailAddress,
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'يرجى ادخال البريد الألكتروني';
+                }
+                return null;
+              },
             ),
             SizedBox(
               height: context.screenHeight * 0.02,
             ),
-            const CustomTextFormFeild(
+            CustomTextFormFeild(
               hintText: 'كلمة المرور',
               keyBoardType: TextInputType.visiblePassword,
               suffixIcon:
-                  Icon(Icons.remove_red_eye, color: AppColors.kGrayColor),
+                  const Icon(Icons.remove_red_eye, color: AppColors.kGrayColor),
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'يرجى ادخال كلمة المرور';
+                }
+                return null;
+              },
             ),
             SizedBox(
               height: context.screenHeight * 0.015,

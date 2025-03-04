@@ -7,13 +7,20 @@ class CustomTextFormFeild extends StatelessWidget {
       {super.key,
       required this.hintText,
       this.suffixIcon,
-      required this.keyBoardType});
+      required this.keyBoardType,
+      required this.validator,
+      this.onSaved});
   final String hintText;
   final Widget? suffixIcon;
   final TextInputType keyBoardType;
+  final void Function(String?)? onSaved;
+
+  final String? Function(String?)? validator;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: validator,
+      onSaved: onSaved,
       keyboardType: keyBoardType,
       decoration: InputDecoration(
         filled: true,
