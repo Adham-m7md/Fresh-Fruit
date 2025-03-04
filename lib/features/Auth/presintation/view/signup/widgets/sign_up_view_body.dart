@@ -4,8 +4,8 @@ import 'package:fresh_fruit/core/constants.dart';
 import 'package:fresh_fruit/core/helper/widgets/custom_button.dart';
 import 'package:fresh_fruit/core/helper/widgets/custom_terms_and_conditions.dart';
 import 'package:fresh_fruit/core/helper/widgets/custom_text_form_feild.dart';
+import 'package:fresh_fruit/core/helper/widgets/custome_password_feild.dart';
 import 'package:fresh_fruit/core/helper/widgets/have_an_account.dart';
-import 'package:fresh_fruit/core/utils/app_colors.dart';
 import 'package:fresh_fruit/core/utils/app_directions.dart';
 import 'package:fresh_fruit/features/Auth/presintation/cubits/signup_cubit/signup_cubit.dart';
 
@@ -60,21 +60,7 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
                 },
               ),
               SizedBox(height: context.screenHeight * 0.02),
-              CustomTextFormFeild(
-                hintText: 'كلمة المرور',
-                keyBoardType: TextInputType.visiblePassword,
-                suffixIcon: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.remove_red_eye,
-                      color: AppColors.kGrayColor,
-                    )),
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return 'يرجى ادخال كلمة المرور';
-                  }
-                  return null;
-                },
+              CustomPasswordFeild(
                 onSaved: (value) {
                   password = value!;
                 },
