@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fresh_fruit/core/helper/functions/build_error_bar.dart';
 // ignore: depend_on_referenced_packages
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
@@ -27,11 +28,7 @@ class SignUpView extends StatelessWidget {
             listener: (context, state) {
               if (state is SignupSuccess) {
               } else if (state is SignupFailure) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(state.message),
-                  ),
-                );
+                buildErrorBar(context, state.message);
               } else {
                 return;
               }

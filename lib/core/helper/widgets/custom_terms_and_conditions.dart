@@ -4,8 +4,8 @@ import 'package:fresh_fruit/core/utils/app_colors.dart';
 import 'package:fresh_fruit/core/utils/app_text_styles.dart';
 
 class CustomTermsAndConditions extends StatefulWidget {
-  const CustomTermsAndConditions({super.key});
-
+  const CustomTermsAndConditions({super.key, required this.onChecked});
+  final ValueChanged<bool> onChecked;
   @override
   State<CustomTermsAndConditions> createState() =>
       _CustomTermsAndConditionsState();
@@ -20,6 +20,7 @@ class _CustomTermsAndConditionsState extends State<CustomTermsAndConditions> {
         CustomCheckIcon(
           onChecked: (bool value) {
             isTermsAccepted = value;
+            widget.onChecked(value);
             setState(() {});
           },
           isChecked: isTermsAccepted,

@@ -5,7 +5,7 @@ import 'package:fresh_fruit/core/utils/app_colors.dart';
 class CustomPasswordFeild extends StatefulWidget {
   const CustomPasswordFeild({
     super.key,
-    this.onSaved,
+    required this.onSaved,
   });
   final void Function(String?)? onSaved;
   @override
@@ -13,37 +13,36 @@ class CustomPasswordFeild extends StatefulWidget {
 }
 
 class _CustomPasswordFeildState extends State<CustomPasswordFeild> {
-  void Function(String?)? onSaved;
-
   bool obscure = true;
 
   @override
   Widget build(BuildContext context) {
     return CustomTextFormFeild(
-        obscureText: obscure,
-        hintText: 'كلمة المرور',
-        keyBoardType: TextInputType.visiblePassword,
-        suffixIcon: IconButton(
-          onPressed: () {
-            obscure = !obscure;
-            setState(() {});
-          },
-          icon: obscure
-              ? const Icon(
-                  Icons.remove_red_eye,
-                  color: AppColors.kGrayColor,
-                )
-              : const Icon(
-                  Icons.visibility_off,
-                  color: AppColors.kGrayColor,
-                ),
-        ),
-        validator: (value) {
-          if (value == null || value.isEmpty) {
-            return 'يرجى ادخال كلمة المرور';
-          }
-          return null;
+      obscureText: obscure,
+      hintText: 'كلمة المرور',
+      keyBoardType: TextInputType.visiblePassword,
+      suffixIcon: IconButton(
+        onPressed: () {
+          obscure = !obscure;
+          setState(() {});
         },
-        onSaved: onSaved);
+        icon: obscure
+            ? const Icon(
+                Icons.remove_red_eye,
+                color: AppColors.kGrayColor,
+              )
+            : const Icon(
+                Icons.visibility_off,
+                color: AppColors.kGrayColor,
+              ),
+      ),
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return 'يرجى ادخال كلمة المرور';
+        }
+        return null;
+      },
+      onSaved: widget.onSaved,
+    );
   }
 }
